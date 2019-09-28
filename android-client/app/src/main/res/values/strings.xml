@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Fire Alarm</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="alert_melon">Alert Melon</string>
+    <string name="statistics">Statistics</string>
+    <string name="logs">Logs</string>
+    <string name="tools">Tools</string>
+    <string name="about">About</string>
+    <string name="control_alarm_led">Control Alarm LED</string>
+    <string name="alarm_led">Alarm LED</string>
+    <string name="control_the_buzzer">Control the Buzzer</string>
+    <string name="buzzer">Buzzer</string>
+    <string name="fire_alarm">Fire Alarm</string>
+</resources>

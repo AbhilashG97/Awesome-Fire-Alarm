@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fire-System</title>
+   
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+
+
+
+</head>
+
+<body >
+
+    <nav class="blue fixed">
+        <div class="nav-wrapper">
+            <a data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            
+            <a  class="brand-logo center">Fire System</a>
+        </div>  
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-title"><i class="material-icons">dashboard</i>&nbsp;Dashboard</div>
+                    <hr>
+                    <div class="row">
+                        <div class="col s7">
+                            <canvas id="tempChart" ></canvas>
+                        </div>
+                        <div class="col s5">
+                            <center><span style="font-size:16px"><strong>Settings</strong><i class="material-icons">&nbsp;settings</i></span></center>
+                            <br>
+                            
+                            <div class="input-field inline">
+                                <input id="threshold" type="text">
+                                <input type="submit" id="changethreshold" class="btn" onclick="changeThreshold()">
+                                <label for="threshold">Set Threshold</label>
+                            </div>
+                            <div class="input-field inline">
+                                <a class="btn" onclick="showThreshold()">Show Threshold</a>
+                            </div>
+
+                            <a class="btn red" onclick="alarmOff()">Alarm OFF</a>
+
+                           
+                            
+                        </div>
+                
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col s6">
+                                <span style="font-size:20px"><strong>Alerts<i class="material-icons">&nbsp;announcement</i></strong></span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="alert">
+
+                    </div>
+                </div>
+            </div>
+            
+    </div>
+
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+    crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.21.6.min.js"></script>
+    <script src="./public/js/app.js"></script>
+    <!-- Scripts -->
+    <script>
+        M.AutoInit();
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.dropdown-trigger');
+            var instances = M.Dropdown.init(elems, {coverTrigger:false,hover:true});
+        });
+
+
+    </script>
+
+</body>
+
+</html>
